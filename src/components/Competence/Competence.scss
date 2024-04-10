@@ -1,0 +1,16 @@
+.competence {
+    width: 20%;
+    text-align: center;
+    padding: 6px 12px;
+    border: 2px solid #fff;
+
+    p {
+        font-size: 24px;
+    }
+
+    transition: transform 0.3s ease;
+}
+
+.competence:hover {
+    transform: scale(1.05);
+}
