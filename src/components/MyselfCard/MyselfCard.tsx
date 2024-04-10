@@ -1,16 +1,15 @@
 import React from 'react';
-import classes from './MyselfCard.module.scss'
+import './MyselfCard.scss'
 
-import MyselfCardProps from '../../interfaces/MyselfCardProps';
+import MyselfCardProps from '#interfaces/IMyselfCardProps';
 
 const MyselfCard : React.FC<MyselfCardProps> = ({ name, img }) => {
     return (
-        <div className={classes.myself}>
+        <section className="myself">
             <img src={img}></img>
-            <p className={classes.name}>{name}</p>
-        </div>
+            <p className="name">{name}</p>
+        </section>
     )
-    
 }
 
 export default MyselfCard;

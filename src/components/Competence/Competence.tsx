@@ -1,9 +1,12 @@
 import React from 'react'
+import './Competence.scss'
 
-const Competence : React.FC = () => {
+import ICompetenceProps from '#interfaces/ICompetenceProps';
+
+const Competence : React.FC<ICompetenceProps> = ({ name }) => {
     return (
-        <div>
-            
+        <div className="competence">
+            <p>{name}</p>
         </div>
     )
 }
