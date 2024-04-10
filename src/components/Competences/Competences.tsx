@@ -8,8 +8,8 @@ import ICompetencesProps from '#interfaces/ICompetencesProps';
 const Competences : React.FC<ICompetencesProps> = ({ competences }) => {
     return (
         <section className="competences">
-            {competences.map(competence => 
-                <Competence name={competence} />
+            {competences.map((competence, index) => 
+                <Competence key={index} name={competence} />
             )}
         </section>
     )
